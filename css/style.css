@@ -1,0 +1,170 @@
+body {
+	font-family: "DM Sans", sans-serif;
+	/* color: #434455;
+	background-color: #ffffff;
+	font-size: 16px;
+	letter-spacing: 0.02em; */
+}
+
+ul,
+ol {
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+button {
+	cursor: pointer;
+}
+
+.container {
+	width: 100%;
+	/* padding-left: 20px;
+	padding-right: 20px; */
+	margin: 0 auto;
+}
+
+.header {
+	background-color: #121212;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.header-mob-menu {
+	border-radius: 12px;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	background-color: #121212;
+	padding: 9px 20px;
+}
+.header-nav {
+	display: flex;
+	align-items: center;
+}
+.logo-header {
+	margin-right: auto;
+}
+
+.header-logo-icon {
+	fill: #ffffff;
+}
+.header-nav-link {
+	background-color: #1d1d1d;
+	border-radius: 50%;
+	width: 32px;
+	height: 32px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.header-nav-icon {
+	fill: #bea69e66;
+	width: 16px;
+	height: 16px;
+}
+.btn-menu {
+	background-color: transparent;
+	border: none;
+	margin-left: 14px;
+	width: 32px;
+	height: 22px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 5px 0;
+}
+.header-btn-icon {
+	fill: white;
+}
+
+.header-btn {
+	display: none;
+}
+
+@media screen and (min-width: 375px) {
+	.container {
+		max-width: 375px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.header-mob-menu {
+		min-width: 335px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.container {
+		max-width: 768px;
+		padding-left: 32px;
+		padding-right: 32px;
+	}
+
+	.header-menu {
+		display: flex;
+		gap: 14px;
+		align-items: center;
+	}
+
+	.header-mob-menu {
+		min-width: 504px;
+	}
+
+	.header-nav-link {
+		display: none;
+	}
+
+	.header-btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-width: 186px;
+		height: 60px;
+		color: #121212;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 1.56;
+		text-transform: uppercase;
+		text-align: center;
+		padding: 16px 58px;
+		border-radius: 12px;
+		background-color: #fff;
+		border: none;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.container {
+		max-width: 1280px;
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+
+	.header-menu {
+		gap: 20px;
+	}
+
+	.header-mob-menu {
+		min-width: 822px;
+	}
+}
