@@ -135,19 +135,11 @@ button {
 	right: 0;
 	width: 218px;
 	height: 100%;
-	padding-left: 20px;
 	background-color: #bea69e;
-	background-image: url(../img/mob-bg-img.png);
-	background-repeat: no-repeat;
-	background-position: bottom;
-	background-size: 218px;
+	display: flex;
+	flex-direction: column;
 }
 
-@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-	.mob-menu {
-		background-image: url(../img/mob-bg-img-2x.png);
-	}
-}
 .mob-menu-btn {
 	width: 32px;
 	height: 32px;
@@ -170,12 +162,19 @@ button {
 	flex-direction: column;
 	gap: 20px;
 	margin-top: 180px;
+	margin-bottom: auto;
+	padding-left: 20px;
 }
 
 .mob-menu-link {
 	color: #121212;
 	line-height: normal;
 	text-transform: uppercase;
+}
+.mob-menu-bgr-img {
+	margin-top: auto;
+	width: 218px;
+	height: 218px;
 }
 
 .about-link {
@@ -243,15 +242,6 @@ button {
 
 	.mob-menu {
 		width: 480px;
-		padding-left: 64px;
-		background-image: url(../img/tab-bg-img.png);
-		background-size: 480px;
-	}
-
-	@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-		.mob-menu {
-			background-image: url(../img/tab-bg-img-2x.png);
-		}
 	}
 
 	.mob-menu-btn {
@@ -266,6 +256,11 @@ button {
 	.mob-menu-list {
 		gap: 28px;
 		margin-top: 232px;
+	}
+
+	.mob-menu-bgr-img {
+		width: 480px;
+		height: 480px;
 	}
 }
 
