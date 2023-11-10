@@ -177,7 +177,8 @@ button {
 	height: 218px;
 }
 
-.about-link {
+.mob-menu-link:hover,
+.mob-menu-link:focus {
 	font-weight: 700;
 }
 
@@ -285,9 +286,6 @@ button {
 		gap: 28px;
 	}
 
-	.header-menu-item {
-	}
-
 	.header-menu-link {
 		font-size: 14px;
 		line-height: normal;
@@ -295,8 +293,8 @@ button {
 		transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), font-weight 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	}
 
-	.current:hover,
-	.current:focus {
+	.header-menu-link:hover,
+	.header-menu-link:focus {
 		color: #bea69e;
 		font-weight: 700;
 	}
@@ -325,6 +323,6 @@ button {
 	}
 
 	.header-menu-list {
-		gap: 40px;
+		/* gap: 40px; */
 	}
 }
